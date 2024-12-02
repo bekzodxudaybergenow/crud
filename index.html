@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 class="crud-title">CRUD Application</h1>
+    <div class="crud">
+        <div class="crud-row">
+            <div class="crud-row--from">
+                <form class="form-submit">
+                    <label class="label" for="firstName">First Name</label>
+                    <input class="form-input first-name" type="text" placeholder="Enter First Name">
+                    <label class="label" for="lastName">Last Name</label>
+                    <input class="form-input last-name" type="text" placeholder="Enter Last Name">
+                    <label class="label" for="rollNo">Roll No</label>
+                    <input class="form-input roll-no" type="text" placeholder="Enter Roll No">
+                    <button class="form-submit--btn" type="submit" >Submit</button>
+                </form>
+                <form class="form-edit hidden">
+                    <label for="firstName">First Name</label>
+                    <input class="form-input-edit first-name-edit" type="text" placeholder="Enter First Name">
+                    <label for="lastName">Last Name</label>
+                    <input class="form-input-edit last-name-edit" type="text" placeholder="Enter Last Name">
+                    <label for="rollNo">Roll No</label>
+                    <input class="form-input-edit roll-no-edit" type="text" placeholder="Enter Roll No">
+                    <button class="form-submit--btn" type="submit">Edit</button>
+                </form>
+            </div>
+            <div class="table-row">
+                <table class="table-list">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Roll No</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <label for="firstName">Last Name</label>
+        <input class="form-input last-name" type="text" placeholder="Enter Last Name">
+        <label for="firstName">Roll No</label>
+        <input class="form-input roll-no" type="text" placeholder="Enter Roll No"> -->
+
+<!-- 
+    <table class="table-list">
+        <tbody class="table-body">
+        </tbody>
+      </table> -->

@@ -1,0 +1,3 @@
+CRUD yaratish
+
+Berilgan rasmdan foydalangan holda Foydalanuvchi qo'shish , o'chirish , va tahrirlash funksilari bulishi kerak

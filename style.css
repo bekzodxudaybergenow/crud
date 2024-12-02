@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: #1D2530;
+}
+.crud {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+.crud-row {
+    max-width: 850px;
+    width: 100%;
+}
+.crud-row--from {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.crud-title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    margin: 50px 0 40px;
+}
+.hidden {
+    display: none !important;   
+}
+.form-submit {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.form-edit {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.form-input, .form-input-edit {
+    height: 36px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    outline-color: darkblue;
+
+}
+.label {
+    font-size: 15px;
+    margin-bottom: 2px;
+    color: #d3d4d6;
+}
+.form-submit--btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 85px;
+    cursor: pointer;
+    background-color: #198752;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 2px;
+    transition: background-color .3s ease;
+
+    &:hover {
+        background-color: #119957;
+    }
+    &:active {
+        background-color: #198752;
+    }
+}
+.user-list-row {
+    display: flex;
+    justify-content: space-around;
+    max-width: 400px;
+    border: 1px solid;
+}
+.table-row {
+    overflow-x: auto;
+}
+.table-list {
+    table-layout: fixed;
+    white-space: nowrap;
+    border-collapse: collapse;
+    border-radius: 2px;
+    
+    & tr th {
+        text-align: left;
+        padding: 10px;
+    }
+    & tr td{
+        padding: 15px 10px;
+        border-bottom: 1px solid #212429;
+    }
+}
+.table-list thead {
+    width: 100%;
+    background-color: #212429;
+}
+.table-list tbody {
+    width: 100%;
+    background-color: #2C2F34;
+}
+.btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: opacity .3s ease;
+
+    &:hover {
+        opacity: .8;
+    }
+    &:active {
+        opacity: 1;
+    }
+}
+.edit-btn {
+    background-color: #FEBB11;
+
+}
+.remove-btn {
+    background-color: #CC2F41;
+    color: #fff;
+}
+@media screen and (min-width: 425px) {
+    .crud-title {
+        font-size: 35px;
+    }
+    .table-list {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .crud-title {
+        font-size: 35px;
+        margin: 40px 0 60px;
+    }
+    .form-submit, .form-edit {
+        margin-bottom: 40px;
+    }
+}
